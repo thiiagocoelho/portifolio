@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Projeto | Green House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="../index.html" class="logo">Thiago Coelho</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../index.html#sobre">Sobre</a></li>
+                <li><a href="../index.html#projetos">Projetos</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Detalhes do Projeto -->
+    <section id="projeto-detalhe">
+        <div class="container">
+            <!-- Título do Projeto -->
+            <h2 class="titulo-projeto">Green House</h2>
+
+            <div class="detalhe-container">
+                
+                <!-- Coluna da Esquerda: Galeria de Imagens -->
+                <div class="galeria pixel-border">
+                    <!-- Slides da galeria -->
+                    <div class="slide fade">
+                        <img src="imgProjetos/Captura de tela 2025-07-08 115308.png" alt="Imagem 1 do projeto Green House">
+                        <div class="zoom-icon" onclick="openModal()"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="slide fade">
+                        <img src="imgProjetos/Captura de tela 2025-07-09 095146.png" alt="Imagem 2 do projeto Green House">
+                        <div class="zoom-icon" onclick="openModal()"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="slide fade">
+                        <img src="imgProjetos/Captura de tela 2025-07-09 095211.png" alt="Imagem 3 do projeto Green House">
+                        <div class="zoom-icon" onclick="openModal()"><i class="fas fa-search-plus"></i></div>
+                    </div>
+
+                    <!-- Botões de Navegação (Anterior/Próximo) -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- bolinhas -->
+                    <div class="dots-container">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                </div>
+
+                <!-- Coluna da Direita: Descrição do Projeto -->
+                <div class="descricao-projeto pixel-border">
+                    <h3>Sobre o Projeto</h3>
+                    <p>
+                        Landing page desenvolvida para um projeto fictício de uma empresa de 
+                        jardinagem chamada Green House. O objetivo é apresentar os serviços da empresa de forma clara e atraente, utilizando um design responsivo e acessível.
+                    </p>
+                    
+                    <h3>Tecnologias Utilizadas</h3>
+                    <ul class="tech-list">
+                        <li><i class="fab fa-html5"></i> HTML5</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                        <li><i class="fab fa-js-square"></i> JavaScript</li>
+                        <li>
+                            <img class="tech-icon-img" alt="Figma logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/256px-Figma-logo.svg.png">
+                            Figma
+                        </li>
+                    </ul>
+
+                    <a href="https://green-house-thk.netlify.app/" target="_blank" class="btn-projeto pixel-border">
+                        Ver Projeto Online <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- rodapé -->
+    <footer>
+        <p>&copy; 2025 Thiago Coelho. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Modal para ampliar a imagem -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <a class="prev-modal" onclick="plusSlides(-1)">&#10094;</a>
+            <img id="modalImage" alt="Imagem do projeto ampliada">
+            <a class="next-modal" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

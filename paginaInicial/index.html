@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">Thiago Coelho</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <div class="typing-container">
+                <h1 id="typing-text"></h1><span class="typing-cursor"></span>
+            </div>
+            <p>Desenvolvedor Front-end & UX/UI Designer</p>
+        </div>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section id="sobre" class="hidden">
+        <div class="container">
+            <img src="img/perfilTeste2 (1).jpg" alt="Avatar Pixelado" class="avatar pixel-border">
+            <div class="sobre-texto pixel-border">
+                <h2>Sobre Mim</h2>
+                <p>Olá! Sou Thiago Coelho, um desenvolvedor apaixonado por criar experiências digitais únicas e acessíveis.
+                Estou estudando design UX/UI, sempre buscando a melhor forma de conectar usuários com tecnologia e prover uma navegação intuitiva e agradável.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="hidden">
+        <div class="container">
+            <h2>Minhas Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card pixel-border">
+                    <i class="fab fa-html5 skill-icon"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-card pixel-border">
+                    <i class="fab fa-css3-alt skill-icon"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-card pixel-border">
+                    <i class="fab fa-js-square skill-icon"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card pixel-border">
+                    <i class="fas fa-pencil-ruler skill-icon"></i>
+                    <h3>UX/UI Design</h3>
+                </div>
+                <div class="skill-card pixel-border">
+                    <i class="fab fa-git-alt skill-icon"></i>
+                    <h3>Git</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="hidden">
+        <div class="container">
+            <h2>Meus Projetos</h2>
+            <div class="projetos-grid">
+                <a href="paginaProjetos/indexP.html" class="projeto-link">
+                    <div class="projeto-card pixel-border">
+                        <img src="img/a-logo-design-featuring-a-stylized-green_MJsOIjd4RT64XP-Lx3656w_AFm8mf44SqClv0Z6AHjX7w.png" alt="Imagem do Projeto Green House">
+                        <h3>Green House</h3>
+                        <p>Clique para ver mais detalhes.</p>
+                    </div>
+                </a>
+                <div class="projeto-card pixel-border">
+                    <img src="https://placehold.co/400x300/f77f00/ffffff?text=Projeto+2" alt="Imagem do Projeto 2">
+                    <h3>Nome do Projeto 2</h3>
+                    <p>Descrição do projeto.</p>
+                </div>
+                <div class="projeto-card pixel-border">
+                    <img src="https://placehold.co/400x300/f77f00/ffffff?text=Projeto+3" alt="Imagem do Projeto 3">
+                    <h3>Nome do Projeto 3</h3>
+                    <p>Descrição do projeto.</p>
+                </div>
+            </div>
+            <div class="mostrar-mais-container">
+                <a href="https://github.com/thiiagocoelho" class="btn-mostrar-mais pixel-border">Mostrar mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- certificados -->
+    <section id="certificados" class="hidden">
+        <div class="container">
+            <h2>Meus Certificados</h2>
+            <div class="certificados-carousel-container">
+                <button id="prev-btn" class="carousel-btn prev pixel-border"><i class="fas fa-chevron-left"></i></button>
+                
+                <div class="certificados-wrapper">
+                    <div class="certificados-grid">
+                        <div class="certificado-card pixel-border">
+                            <img src="img/certificados/py(1).png" alt="Logo da instituição do certificado">
+                            <h3>Linguagem de Programação Python - Básico</h3>
+                            <p>Fundação Bradesco - 2024</p>
+                        </div>
+                        <div class="certificado-card pixel-border">
+                            <img src="img/certificados/py-obj.png" alt="certificado">
+                            <h3>Desenvolvimento Orientado a Objetos - Python</h3>
+                            <p>Fundação Bradesco - 2024</p>
+                        </div>
+                        <div class="certificado-card pixel-border">
+                            <img src="img/certificados/logic-js.png" alt="certificado">
+                            <h3>Lógica de programação - JavaScript</h3>
+                            <p>Alura - 2025</p>
+                        </div>
+                        <div class="certificado-card pixel-border">
+                            <img src="img/certificados/scrum.png" alt="certificado">
+                            <h3>Metodologia Agil - Scrum</h3>
+                            <p>Alura - 2025</p>
+                        </div>
+                        <div class="certificado-card pixel-border">
+                            <img src="img/certificados/figma-conhecendo.png" alt="certificado">
+                            <h3>Conhecendo a ferramenta - Figma</h3>
+                            <p>Alura - 2025</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button id="next-btn" class="carousel-btn next pixel-border"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="mostrar-mais-container">
+                <a href="https://drive.google.com/drive/folders/1CJ93afvR723yO_xihIyPDw3FQQtR5G8r?usp=drive_link" class="btn-mostrar-mais pixel-border">Mostrar mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="hidden">
+        <div class="container">
+            <h2>Contato</h2>
+            <p id="paragrafo-contatos" style="text-align: center; margin-bottom: 40px; font-size: 0.9rem;">
+                Você pode me encontrar nas seguintes plataformas:
+            </p>
+            <div class="contato-links">
+                <a href="https://br.linkedin.com/in/thiago-henrique-co%C3%AAlho-116467184" target="_blank" class="contato-link pixel-border">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://instagram.com/thiiago_coelho" target="_blank" class="contato-link pixel-border">
+                    <i class="fab fa-instagram"></i> thiiago_coelho
+                </a>
+                <a href="mailto:thiagoukx@gmail.com" class="contato-link pixel-border">
+                    <i class="fas fa-envelope"></i> thiagoukx@gmail.com
+                </a>
+                <a href="https://wa.me/5598985621647" target="_blank" class="contato-link pixel-border">
+                    <i class="fab fa-whatsapp"></i> +55 (98) 98562-1647
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Thiago Coelho. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <a href="#" id="back-to-top" aria-label="Voltar ao topo" style="display: none;">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Botão e Painel de Acessibilidade -->
+    <button id="accessibility-button" aria-label="Abrir menu de acessibilidade">
+        <i class="fas fa-universal-access"></i>
+    </button>
+
+    <div id="accessibility-panel" class="pixel-border" style="display: none;">
+        <h3>Acessibilidade</h3>
+        
+        <div class="option-group">
+            <h4>Tamanho do Texto</h4>
+            <button id="decrease-font" class="pixel-border" aria-label="Diminuir texto">-</button>
+            <button id="increase-font" class="pixel-border" aria-label="Aumentar texto">+</button>
+        </div>
+
+        <div class="option-group">
+            <h4>Fonte</h4>
+            <button id="font-default" class="pixel-border">Padrão</button>
+            <button id="font-sans-serif" class="pixel-border">Arial</button>
+            <button id="font-serif" class="pixel-border">Serif</button>
+        </div>
+
+        <div class="option-group">
+            <h4>Cores</h4>
+            <button id="color-default" class="pixel-border">Padrão</button>
+            <button id="color-grayscale" class="pixel-border">Cinza</button>
+            <button id="color-faded" class="pixel-border">Desbotado</button>
+            <button id="color-intense" class="pixel-border">Intenso</button>
+        </div>
+        <button id="close-accessibility" class="pixel-border">Fechar</button>
+    </div>
+
+    <div id="image-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
